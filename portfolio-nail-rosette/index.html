@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ===================== SEO ===================== -->
+<title>Nail Salon Rosette｜表参道の完全プライベートネイルサロン</title>
+<meta name="description" content="表参道駅徒歩3分、完全プライベートのネイルサロン Rosette（ロゼット）。丁寧なケアとトレンドデザインで、指先から毎日を華やかに。" />
+<link rel="canonical" href="https://example.com/" />
+<meta name="robots" content="index,follow" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Nail Salon Rosette｜表参道の完全プライベートネイルサロン" />
+<meta property="og:description" content="完全プライベートのネイルサロン。丁寧なケアとトレンドデザインで、指先から毎日を華やかに。" />
+<meta property="og:image" content="https://example.com/assets/img/ogp.jpg" />
+<meta property="og:url" content="https://example.com/" />
+<meta property="og:site_name" content="Nail Salon Rosette" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NailSalon",
+  "name": "Nail Salon Rosette",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "神宮前5-6-7",
+    "addressLocality": "渋谷区",
+    "addressRegion": "東京都",
+    "postalCode": "150-0001",
+    "addressCountry": "JP"
+  },
+  "openingHours": "Tu,We,Th,Fr,Sa,Su 10:00-19:00",
+  "telephone": "03-0000-0000"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Kiwi+Maru:wght@500;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { DEFAULT: "#ec6a9c", dark: "#d14f80", light: "#ffe1ec" },
+        },
+        fontFamily: {
+          sans: ['"Noto Sans JP"', "sans-serif"],
+          cute: ['"Kiwi Maru"', "serif"],
+        },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="text-stone-800 antialiased">
+
+<!-- ============================== HEADER ============================== -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-[#fff8fa]/90 backdrop-blur transition-shadow">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="font-cute text-lg font-bold text-brand-dark">Nail Salon <span class="text-brand">Rosette</span></a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#features" class="hover:text-brand">こだわり</a>
+      <a href="#menu" class="hover:text-brand">メニュー</a>
+      <a href="#gallery" class="hover:text-brand">ギャラリー</a>
+      <a href="#access" class="hover:text-brand">アクセス</a>
+      <a href="#faq" class="hover:text-brand">よくある質問</a>
+      <a href="contact.html" class="bg-brand text-white px-5 py-2 rounded-full hover:bg-brand-dark transition">ご予約</a>
+    </nav>
+
+    <button id="menu-btn" aria-label="メニューを開く" aria-expanded="false" class="md:hidden p-2">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden border-t border-brand-light bg-[#fff8fa] px-4 py-4 space-y-3 text-sm font-medium">
+    <a href="#features" class="block">こだわり</a>
+    <a href="#menu" class="block">メニュー</a>
+    <a href="#gallery" class="block">ギャラリー</a>
+    <a href="#access" class="block">アクセス</a>
+    <a href="#faq" class="block">よくある質問</a>
+    <a href="contact.html" class="block text-brand font-bold">ご予約</a>
+  </div>
+</header>
+
+<main class="pt-16">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="bg-gradient-to-b from-brand-light to-[#fff8fa]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-brand font-bold mb-3 tracking-wide">PRIVATE NAIL SALON</p>
+        <h1 class="font-cute text-3xl md:text-5xl font-bold leading-tight mb-6 text-brand-dark">
+          指先に、<br />とっておきの華やかさを。
+        </h1>
+        <p class="text-stone-600 mb-8 leading-relaxed">
+          表参道駅から徒歩3分。完全プライベートの小さなネイルサロン Rosette。<br class="hidden md:block" />
+          丁寧なケアと、その方に似合うデザインのご提案を大切にしています。
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="contact.html" class="bg-brand text-white px-8 py-4 rounded-full font-bold hover:bg-brand-dark transition">ご予約はこちら</a>
+          <a href="#menu" class="border border-brand/30 px-8 py-4 rounded-full font-bold hover:bg-white transition">メニューを見る</a>
+        </div>
+      </div>
+
+      <!-- ネイルチップ風のスウォッチを散らした装飾ビジュアル（写真の代わり） -->
+      <div class="relative h-64 md:h-80">
+        <div class="absolute top-0 left-6 w-24 md:w-28 nail-chip glitter -rotate-6" style="background: linear-gradient(160deg,#ffe9b0,#f5c26b);"></div>
+        <div class="absolute top-10 right-4 w-28 md:w-32 nail-chip rotate-3" style="background: linear-gradient(160deg,#ffd9e6,#ffb6ce);"></div>
+        <div class="absolute bottom-2 left-16 w-24 md:w-28 nail-chip glitter rotate-12" style="background: linear-gradient(160deg,#fffaf5,#ffe9d6);"></div>
+        <svg class="absolute top-2 right-24 w-6 h-6 text-brand/60" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0l2.2 8.8L23 11l-8.8 2.2L12 22l-2.2-8.8L1 11l8.8-2.2L12 0z"/></svg>
+        <svg class="absolute bottom-10 right-2 w-4 h-4 text-brand/50" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0l2.2 8.8L23 11l-8.8 2.2L12 22l-2.2-8.8L1 11l8.8-2.2L12 0z"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FEATURES ============================== -->
+  <section id="features" class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+    <div class="text-center mb-14">
+      <p class="text-brand font-bold mb-2 tracking-wide">CONCEPT</p>
+      <h2 class="font-cute text-2xl md:text-3xl font-bold text-brand-dark">3つのこだわり</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-8 rounded-2xl bg-white border border-brand-light">
+        <div class="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 4.5c-4-4-9 1-9 5.5 0 5 6 9 9 12 3-3 9-7 9-12 0-4.5-5-9.5-9-5.5z" /></svg>
+        </div>
+        <h3 class="font-bold text-lg mb-3">完全プライベート空間</h3>
+        <p class="text-stone-600 text-sm leading-relaxed">お客様1名ずつの完全予約制。他のお客様と顔を合わせることなく、リラックスした時間をお過ごしいただけます。</p>
+      </div>
+      <div class="p-8 rounded-2xl bg-white border border-brand-light">
+        <div class="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        </div>
+        <h3 class="font-bold text-lg mb-3">爪を傷めないていねいなオフ</h3>
+        <p class="text-stone-600 text-sm leading-relaxed">自爪の状態を確認しながら、次回のケアまで見据えた施術を行います。地爪ケアメニューも人気です。</p>
+      </div>
+      <div class="p-8 rounded-2xl bg-white border border-brand-light">
+        <div class="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M11 3a1 1 0 012 0l1.2 3.6a1 1 0 00.95.69h3.79a1 1 0 01.59 1.81l-3.07 2.23a1 1 0 00-.36 1.12l1.17 3.6a1 1 0 01-1.54 1.12L12 15.3l-3.07 2.27a1 1 0 01-1.54-1.12l1.17-3.6a1 1 0 00-.36-1.12L5.13 9.1a1 1 0 01.59-1.81h3.79a1 1 0 00.95-.69L11.66 3z" /></svg>
+        </div>
+        <h3 class="font-bold text-lg mb-3">トレンドを押さえたデザイン提案</h3>
+        <p class="text-stone-600 text-sm leading-relaxed">海外のトレンドデザインを毎月リサーチ。カウンセリングで、なりたいイメージに近い一案をご提案します。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== MENU ============================== -->
+  <section id="menu" class="bg-white py-20 border-y border-brand-light">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <p class="text-brand font-bold mb-2 tracking-wide">MENU</p>
+        <h2 class="font-cute text-2xl md:text-3xl font-bold text-brand-dark">メニュー</h2>
+      </div>
+
+      <div class="mb-10">
+        <h3 class="font-cute text-lg font-bold text-brand-dark mb-5 pb-2 border-b-2 border-brand-light">HAND</h3>
+        <ul class="space-y-4 text-sm">
+          <li class="flex justify-between"><span>ジェルネイル（オフ込み・シンプルワンカラー）</span><span class="font-bold whitespace-nowrap ml-4">¥6,800〜</span></li>
+          <li class="flex justify-between"><span>アートネイル（3本まで）</span><span class="font-bold whitespace-nowrap ml-4">¥7,800〜</span></li>
+          <li class="flex justify-between"><span>フルアート（10本）</span><span class="font-bold whitespace-nowrap ml-4">¥10,500〜</span></li>
+        </ul>
+      </div>
+
+      <div class="mb-10">
+        <h3 class="font-cute text-lg font-bold text-brand-dark mb-5 pb-2 border-b-2 border-brand-light">FOOT</h3>
+        <ul class="space-y-4 text-sm">
+          <li class="flex justify-between"><span>フットジェル（オフ込み）</span><span class="font-bold whitespace-nowrap ml-4">¥7,500〜</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-cute text-lg font-bold text-brand-dark mb-5 pb-2 border-b-2 border-brand-light">CARE</h3>
+        <ul class="space-y-4 text-sm">
+          <li class="flex justify-between"><span>パラフィンパック</span><span class="font-bold whitespace-nowrap ml-4">¥1,500</span></li>
+          <li class="flex justify-between"><span>ハンドマッサージ（15分）</span><span class="font-bold whitespace-nowrap ml-4">¥1,000</span></li>
+        </ul>
+      </div>
+      <p class="text-xs text-stone-400 mt-8 text-center">【編集】価格は全て税込。デザインの内容により追加料金が発生する場合があります。</p>
+    </div>
+  </section>
+
+  <!-- ============================== GALLERY ============================== -->
+  <section id="gallery" class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+    <div class="text-center mb-14">
+      <p class="text-brand font-bold mb-2 tracking-wide">GALLERY</p>
+      <h2 class="font-cute text-2xl md:text-3xl font-bold text-brand-dark">デザインギャラリー</h2>
+      <p class="text-xs text-stone-400 mt-3">【編集】実案件では実際の施術写真に差し替えてください。ここではカラーイメージをチップ風に表現しています。</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+      <div>
+        <div class="nail-chip" style="background: linear-gradient(160deg,#ffd9e6,#ffb6ce);"></div>
+        <p class="text-center text-sm font-bold mt-3">シアーピンク</p>
+      </div>
+      <div>
+        <div class="nail-chip" style="background: linear-gradient(160deg,#f7f7f7,#e2e2e2);"></div>
+        <p class="text-center text-sm font-bold mt-3">ミラーフレンチ</p>
+      </div>
+      <div>
+        <div class="nail-chip glitter" style="background: linear-gradient(160deg,#fffaf5,#ffe9d6);"></div>
+        <p class="text-center text-sm font-bold mt-3">パールホワイト</p>
+      </div>
+      <div>
+        <div class="nail-chip glitter" style="background: linear-gradient(160deg,#ffe9b0,#f5c26b);"></div>
+        <p class="text-center text-sm font-bold mt-3">グリッターゴールド</p>
+      </div>
+      <div>
+        <div class="nail-chip" style="background: linear-gradient(160deg,#f1e1d3,#e0c3ad);"></div>
+        <p class="text-center text-sm font-bold mt-3">ニュアンスベージュ</p>
+      </div>
+      <div>
+        <div class="nail-chip" style="background: linear-gradient(160deg,#ffb6a3,#ff8f7a);"></div>
+        <p class="text-center text-sm font-bold mt-3">コーラルフレンチ</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== VOICE ============================== -->
+  <section class="bg-white py-20 border-y border-brand-light">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <p class="text-brand font-bold mb-2 tracking-wide">VOICE</p>
+        <h2 class="font-cute text-2xl md:text-3xl font-bold text-brand-dark">お客様の声</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-brand-light/40 p-6 rounded-2xl">
+          <p class="text-sm text-stone-600 leading-relaxed mb-4">「丁寧なカウンセリングで、いつも似合うデザインを提案してもらえます。」</p>
+          <p class="text-sm font-bold">会社員のお客様</p>
+        </div>
+        <div class="bg-brand-light/40 p-6 rounded-2xl">
+          <p class="text-sm text-stone-600 leading-relaxed mb-4">「オフのダメージが心配でしたが、自爪がどんどん綺麗になっていくのを実感しています。」</p>
+          <p class="text-sm font-bold">常連のお客様</p>
+        </div>
+        <div class="bg-brand-light/40 p-6 rounded-2xl">
+          <p class="text-sm text-stone-600 leading-relaxed mb-4">「完全個室なので、周りを気にせずゆっくり過ごせるのが嬉しいです。」</p>
+          <p class="text-sm font-bold">初めてご来店のお客様</p>
+        </div>
+      </div>
+      <p class="text-xs text-stone-400 mt-6 text-center">【編集】このセクションは架空の口コミです。実案件では実際のお客様の声（許可取得済み）に差し替えてください。</p>
+    </div>
+  </section>
+
+  <!-- ============================== ACCESS ============================== -->
+  <section id="access" class="bg-brand-light/50 py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <p class="text-brand font-bold mb-2 tracking-wide">ACCESS</p>
+        <h2 class="font-cute text-2xl md:text-3xl font-bold text-brand-dark">アクセス</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div class="aspect-[4/3] rounded-2xl bg-white border border-brand-light flex flex-col items-center justify-center text-stone-400 gap-2">
+          <svg class="w-10 h-10 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+          <p class="text-xs">【編集】Googleマップの埋め込みiframeをここに設置</p>
+        </div>
+        <table class="w-full text-sm">
+          <tbody>
+            <tr class="border-b border-brand/20">
+              <th class="py-4 pr-4 w-24 text-left text-stone-500 font-medium align-top">住所</th>
+              <td class="py-4">〒150-0001<br />東京都渋谷区神宮前5-6-7</td>
+            </tr>
+            <tr class="border-b border-brand/20">
+              <th class="py-4 pr-4 text-left text-stone-500 font-medium align-top">最寄駅</th>
+              <td class="py-4">表参道駅 徒歩3分</td>
+            </tr>
+            <tr class="border-b border-brand/20">
+              <th class="py-4 pr-4 text-left text-stone-500 font-medium align-top">営業時間</th>
+              <td class="py-4">10:00〜19:00（最終受付 17:30）</td>
+            </tr>
+            <tr class="border-b border-brand/20">
+              <th class="py-4 pr-4 text-left text-stone-500 font-medium align-top">定休日</th>
+              <td class="py-4">月曜日</td>
+            </tr>
+            <tr class="border-b border-brand/20">
+              <th class="py-4 pr-4 text-left text-stone-500 font-medium align-top">ご予約</th>
+              <td class="py-4">完全予約制（お電話・フォーム・Instagram DM）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FAQ ============================== -->
+  <section id="faq" class="max-w-3xl mx-auto px-4 sm:px-6 py-20">
+    <div class="text-center mb-14">
+      <p class="text-brand font-bold mb-2 tracking-wide">FAQ</p>
+      <h2 class="font-cute text-2xl md:text-3xl font-bold text-brand-dark">よくある質問</h2>
+    </div>
+    <div class="space-y-4">
+      <details class="bg-white rounded-xl p-5 border border-brand-light">
+        <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
+          完全予約制ですか？
+          <svg class="faq-icon w-5 h-5 shrink-0 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </summary>
+        <p class="text-sm text-stone-600 mt-3 leading-relaxed">はい、完全予約制です。フォーム・お電話・Instagram DMのいずれかからご予約ください。</p>
+      </details>
+      <details class="bg-white rounded-xl p-5 border border-brand-light">
+        <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
+          オフのみの利用はできますか？
+          <svg class="faq-icon w-5 h-5 shrink-0 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </summary>
+        <p class="text-sm text-stone-600 mt-3 leading-relaxed">可能です。他店で施術されたジェルのオフは、状態により追加料金が発生する場合があります。</p>
+      </details>
+      <details class="bg-white rounded-xl p-5 border border-brand-light">
+        <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
+          お子様連れでの来店は可能ですか？
+          <svg class="faq-icon w-5 h-5 shrink-0 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </summary>
+        <p class="text-sm text-stone-600 mt-3 leading-relaxed">施術に集中させていただくため、お子様連れでのご来店はご遠慮いただいております。あらかじめご了承ください。</p>
+      </details>
+      <details class="bg-white rounded-xl p-5 border border-brand-light">
+        <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
+          キャンセルポリシーを教えてください
+          <svg class="faq-icon w-5 h-5 shrink-0 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+        </summary>
+        <p class="text-sm text-stone-600 mt-3 leading-relaxed">ご予約前日20時までにご連絡ください。当日キャンセル・無断キャンセルの場合、キャンセル料を申し受けます。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============================== CTA ============================== -->
+  <section id="cta" class="bg-brand">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-20 text-center text-white">
+      <h2 class="font-cute text-2xl md:text-3xl font-bold mb-4">指先から、なりたい私へ</h2>
+      <p class="mb-8 text-white/90">ご予約はフォーム・お電話・Instagram DMから承っております。</p>
+      <a href="contact.html" class="inline-block bg-white text-brand px-10 py-4 rounded-full font-bold hover:bg-stone-100 transition">ご予約フォームへ</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="bg-brand-dark text-white/70 py-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+    <p class="font-cute font-bold text-white">Nail Salon Rosette</p>
+    <nav class="flex gap-6 text-sm">
+      <a href="index.html" class="hover:text-white">ホーム</a>
+      <a href="about.html" class="hover:text-white">サロンについて</a>
+      <a href="contact.html" class="hover:text-white">ご予約</a>
+    </nav>
+    <p class="text-xs">&copy; <span id="year"></span> Nail Salon Rosette</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

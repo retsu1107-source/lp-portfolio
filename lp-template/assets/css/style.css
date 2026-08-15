@@ -1,0 +1,48 @@
+/* =========================================================
+   カスタムCSS（Tailwindユーティリティで足りない部分だけ書く）
+   Tailwind CDN版はビルド不要な代わりに tailwind.config を
+   JSファイル化できないので、細かい調整はここに書く運用にしています。
+   ========================================================= */
+
+:root {
+  --brand-primary: #2563eb;   /* 【編集】クライアントのブランドカラーに変更 */
+  --brand-primary-dark: #1d4ed8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+/* FAQのdetails/summaryを開いたときに矢印を回転させる */
+details[open] .faq-icon {
+  transform: rotate(180deg);
+}
+.faq-icon {
+  transition: transform 0.2s ease;
+}
+
+/* スクロールしたらヘッダーに影をつける（main.jsでクラス付与） */
+header.is-scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* フォーム送信中のボタン用（main.jsでクラス付与） */
+.is-submitting {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* 画像プレースホルダー（納品前に実画像へ差し替える） */
+.img-placeholder {
+  background: repeating-linear-gradient(
+    45deg,
+    #e5e7eb,
+    #e5e7eb 10px,
+    #f3f4f6 10px,
+    #f3f4f6 20px
+  );
+}

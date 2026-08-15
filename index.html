@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ===================== SEO ===================== -->
+<!-- TODO: 屋号・お名前が決まったらタイトル/説明文の「LP Design Portfolio」部分を差し替えてください -->
+<title>LP Design Portfolio｜個人店・小規模店舗のためのLP制作</title>
+<meta name="description" content="個人店・小規模店舗様向けのランディングページ制作ポートフォリオ。業種ごとに作り分けたデザインサンプルと制作の強みを紹介しています。" />
+<meta name="robots" content="index,follow" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="LP Design Portfolio｜個人店・小規模店舗のためのLP制作" />
+<meta property="og:description" content="個人店・小規模店舗様向けのランディングページ制作ポートフォリオ。" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: { DEFAULT: "#1f2430", soft: "#4b5262" },
+          brand: { DEFAULT: "#2f5d50", dark: "#213f37", light: "#e7efe9" },
+        },
+        fontFamily: {
+          sans: ['"Noto Sans JP"', "sans-serif"],
+          serifjp: ['"Shippori Mincho"', "serif"],
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  .mock-browser { border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px -20px rgba(31,36,48,.35); }
+  .mock-bar { height: 28px; display:flex; align-items:center; gap:6px; padding:0 10px; background:#e7e9ee; }
+  .mock-dot { width:8px; height:8px; border-radius:999px; background:#c7cbd6; }
+</style>
+</head>
+
+<body class="bg-white text-ink antialiased">
+
+<!-- ============================== HEADER ============================== -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-black/5">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <a href="#top" class="font-serifjp text-lg font-bold text-brand-dark">LP Design Portfolio</a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#works" class="hover:text-brand">実績</a>
+      <a href="#strengths" class="hover:text-brand">制作の強み</a>
+      <a href="#flow" class="hover:text-brand">ご依頼の流れ</a>
+      <a href="#contact" class="bg-brand text-white px-5 py-2 rounded-full hover:bg-brand-dark transition">お問い合わせ</a>
+    </nav>
+    <button id="menu-btn" aria-label="メニューを開く" aria-expanded="false" class="md:hidden p-2">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-black/5 bg-white px-4 py-4 space-y-3 text-sm font-medium">
+    <a href="#works" class="block">実績</a>
+    <a href="#strengths" class="block">制作の強み</a>
+    <a href="#flow" class="block">ご依頼の流れ</a>
+    <a href="#contact" class="block text-brand font-bold">お問い合わせ</a>
+  </div>
+</header>
+
+<main id="top" class="pt-16">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="bg-gradient-to-b from-brand-light to-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 text-center">
+      <p class="text-brand font-bold mb-3 tracking-wide">LP / LANDING PAGE DESIGN</p>
+      <h1 class="font-serifjp text-3xl md:text-5xl font-bold leading-tight mb-6 text-ink">
+        「テンプレ感」の出ない、<br class="hidden md:block" />個人店・小規模店舗のためのLP制作
+      </h1>
+      <p class="text-ink-soft max-w-2xl mx-auto mb-10 leading-relaxed">
+        カフェ・サロンなど業種ごとに、配色・書体・装飾を一から作り分けています。<br class="hidden md:block" />
+        写真がまだ無い開業前のお店でも、SVGイラストやCSS装飾で完成度の高いLPをご提案できます。
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#works" class="bg-brand text-white px-8 py-4 rounded-full font-bold hover:bg-brand-dark transition">実績を見る</a>
+        <a href="#contact" class="border border-brand/30 px-8 py-4 rounded-full font-bold hover:bg-white transition">相談してみる</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== WORKS ============================== -->
+  <section id="works" class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+    <div class="text-center mb-14">
+      <p class="text-brand font-bold mb-2 tracking-wide text-sm">WORKS</p>
+      <h2 class="font-serifjp text-2xl md:text-3xl font-bold">制作実績サンプル</h2>
+      <p class="text-ink-soft mt-3">いずれも架空店舗の制作サンプルです。実際の店舗様の場合は、ヒアリングと写真をもとに同水準のLPを1〜2週間程度で制作します。</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Work 1: 喫茶 木もれ日 -->
+      <a href="portfolio-komorebi/" class="group block rounded-2xl border border-black/5 bg-white hover:shadow-xl transition overflow-hidden">
+        <div class="mock-browser m-4">
+          <div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+          <div class="h-40 md:h-48" style="background:linear-gradient(160deg,#f3e6d8,#fdf7f0);">
+            <div class="h-full flex items-center justify-center">
+              <svg viewBox="0 0 200 200" class="w-20 h-20 opacity-80">
+                <path d="M40,85 H160 V135 Q160,160 135,160 H65 Q40,160 40,135 Z" fill="#fff" stroke="#8a5a3b" stroke-width="6" />
+                <path d="M160,100 a25,25 0 1 1 0,50" fill="none" stroke="#8a5a3b" stroke-width="9" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 pb-6">
+          <p class="text-xs font-bold text-[#8a5a3b] mb-1 tracking-wide">CAFE / 飲食店</p>
+          <h3 class="font-serifjp text-xl font-bold mb-2 group-hover:text-brand transition">喫茶 木もれ日</h3>
+          <p class="text-sm text-ink-soft leading-relaxed mb-4">コーヒーブラウン×明朝体で、あたたかみのある個人店らしさを表現。メニュー・アクセスなど飲食店特有の構成を追加。</p>
+          <span class="inline-flex items-center gap-1 text-sm font-bold text-brand">サイトを見る <span class="transition group-hover:translate-x-1">→</span></span>
+        </div>
+      </a>
+
+      <!-- Work 2: Nail Salon Rosette -->
+      <a href="portfolio-nail-rosette/" class="group block rounded-2xl border border-black/5 bg-white hover:shadow-xl transition overflow-hidden">
+        <div class="mock-browser m-4">
+          <div class="mock-bar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+          <div class="h-40 md:h-48 relative overflow-hidden" style="background:linear-gradient(160deg,#ffe1ec,#fff8fa);">
+            <div class="absolute top-6 left-8 w-16 h-16 rounded-2xl rotate-[-8deg]" style="background:linear-gradient(160deg,#ffe9b0,#f5c26b);"></div>
+            <div class="absolute bottom-6 right-10 w-16 h-16 rounded-2xl rotate-6" style="background:linear-gradient(160deg,#ffd9e6,#ffb6ce);"></div>
+          </div>
+        </div>
+        <div class="px-6 pb-6">
+          <p class="text-xs font-bold text-[#ec6a9c] mb-1 tracking-wide">NAIL SALON / 美容系</p>
+          <h3 class="font-serifjp text-xl font-bold mb-2 group-hover:text-brand transition">Nail Salon Rosette</h3>
+          <p class="text-sm text-ink-soft leading-relaxed mb-4">ビビッドピンク×丸ゴシックでキュートな世界観を演出。ギャラリーや予約フォームなど美容サロン特有の構成を追加。</p>
+          <span class="inline-flex items-center gap-1 text-sm font-bold text-brand">サイトを見る <span class="transition group-hover:translate-x-1">→</span></span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============================== STRENGTHS ============================== -->
+  <section id="strengths" class="bg-brand-light/60 py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <p class="text-brand font-bold mb-2 tracking-wide text-sm">STRENGTHS</p>
+        <h2 class="font-serifjp text-2xl md:text-3xl font-bold">制作の強み</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8">
+          <h3 class="font-bold text-lg mb-3">業種特化の構成提案</h3>
+          <p class="text-sm text-ink-soft leading-relaxed">「料金プラン」のような汎用セクションではなく、飲食店なら「メニュー・アクセス」、サロンなら「ギャラリー・予約導線」など、業種の実運用に合わせて構成そのものを作り分けます。</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8">
+          <h3 class="font-bold text-lg mb-3">写真が無くても形になる</h3>
+          <p class="text-sm text-ink-soft leading-relaxed">SVGイラストやCSSグラデーション装飾で世界観を表現するため、開業前で写真素材が無い状態からでも制作開始が可能。撮影後に画像を差し替えるだけで完成度を保てます。</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8">
+          <h3 class="font-bold text-lg mb-3">軽量・SEO対応</h3>
+          <p class="text-sm text-ink-soft leading-relaxed">ビルド不要のHTML/CSS＋Tailwindで軽量に構築。title/description/OGP・構造化データ(JSON-LD)を標準で設定し、レスポンシブにも対応します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FLOW ============================== -->
+  <section id="flow" class="max-w-4xl mx-auto px-4 sm:px-6 py-20">
+    <div class="text-center mb-14">
+      <p class="text-brand font-bold mb-2 tracking-wide text-sm">FLOW</p>
+      <h2 class="font-serifjp text-2xl md:text-3xl font-bold">ご依頼の流れ</h2>
+    </div>
+    <ol class="space-y-6">
+      <li class="flex gap-5">
+        <span class="shrink-0 w-9 h-9 rounded-full bg-brand text-white flex items-center justify-center font-bold text-sm">1</span>
+        <div><h3 class="font-bold mb-1">ヒアリング</h3><p class="text-sm text-ink-soft">お店のコンセプト・掲載したい情報・ご予算感をお伺いします。</p></div>
+      </li>
+      <li class="flex gap-5">
+        <span class="shrink-0 w-9 h-9 rounded-full bg-brand text-white flex items-center justify-center font-bold text-sm">2</span>
+        <div><h3 class="font-bold mb-1">デザイン・構成のご提案</h3><p class="text-sm text-ink-soft">業種に合わせた配色・書体・セクション構成をご提案し、認識をすり合わせます。</p></div>
+      </li>
+      <li class="flex gap-5">
+        <span class="shrink-0 w-9 h-9 rounded-full bg-brand text-white flex items-center justify-center font-bold text-sm">3</span>
+        <div><h3 class="font-bold mb-1">制作・確認</h3><p class="text-sm text-ink-soft">コーディングを進め、実機・スマホ表示を確認しながら調整します。</p></div>
+      </li>
+      <li class="flex gap-5">
+        <span class="shrink-0 w-9 h-9 rounded-full bg-brand text-white flex items-center justify-center font-bold text-sm">4</span>
+        <div><h3 class="font-bold mb-1">納品</h3><p class="text-sm text-ink-soft">目安1〜2週間で納品。公開作業のサポートも可能です。</p></div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============================== CONTACT ============================== -->
+  <section id="contact" class="bg-brand">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-20 text-center text-white">
+      <h2 class="font-serifjp text-2xl md:text-3xl font-bold mb-4">お気軽にご相談ください</h2>
+      <p class="mb-8 text-white/90">個人店・小規模店舗様のLP制作、既存サイトのリニューアルなど、お気軽にお問い合わせください。</p>
+      <!-- TODO: 連絡先メールアドレスは必要に応じて差し替えてください -->
+      <a href="mailto:retsu1107@gmail.com" class="inline-block bg-white text-brand-dark px-8 py-4 rounded-full font-bold hover:bg-white/90 transition">メールで相談する</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-ink text-white/70 py-8 text-center text-sm">
+  <p>&copy; <span id="year"></span> LP Design Portfolio</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  menuBtn.addEventListener("click", () => {
+    const isOpen = !mobileMenu.classList.contains("hidden");
+    mobileMenu.classList.toggle("hidden");
+    menuBtn.setAttribute("aria-expanded", String(!isOpen));
+  });
+  mobileMenu.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => mobileMenu.classList.add("hidden")));
+</script>
+
+</body>
+</html>

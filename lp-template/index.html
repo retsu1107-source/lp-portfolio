@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ===================== SEO（案件ごとに書き換える） ===================== -->
+<title>【編集】サービス名｜キャッチコピーをここに</title>
+<meta name="description" content="【編集】検索結果に表示される120文字程度の説明文。誰の・どんな悩みを・どう解決するかを書く。" />
+<link rel="canonical" href="https://example.com/" />
+<meta name="robots" content="index,follow" />
+
+<!-- OGP（SNSでシェアされた時の見た目） -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="【編集】サービス名｜キャッチコピーをここに" />
+<meta property="og:description" content="【編集】descriptionと同じ内容でOK" />
+<meta property="og:image" content="https://example.com/assets/img/ogp.jpg" />
+<meta property="og:url" content="https://example.com/" />
+<meta property="og:site_name" content="【編集】サービス名" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="/assets/img/favicon.ico" />
+
+<!-- 構造化データ（店舗系クライアントなら LocalBusiness に差し替え推奨） -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "【編集】サービス名",
+  "url": "https://example.com/"
+}
+</script>
+
+<!-- ===================== フォント & Tailwind(CDN) ===================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  // Tailwind CDN用のテーマ拡張。ビルド不要でブランドカラーを差し替えられる。
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            DEFAULT: "#2563eb", /* 【編集】ブランドカラー */
+            dark: "#1d4ed8",
+            light: "#dbeafe",
+          },
+        },
+        fontFamily: {
+          sans: ['"Noto Sans JP"', "sans-serif"],
+        },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="text-gray-800 antialiased">
+
+<!-- ============================== HEADER ============================== -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur transition-shadow">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <a href="#" class="text-lg font-bold text-brand">【編集】サービス名</a>
+
+    <!-- PCナビ -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#features" class="hover:text-brand">特徴</a>
+      <a href="#pricing" class="hover:text-brand">料金</a>
+      <a href="#faq" class="hover:text-brand">よくある質問</a>
+      <a href="contact.html" class="hover:text-brand">お問い合わせ</a>
+      <a href="#cta" class="bg-brand text-white px-5 py-2 rounded-full hover:bg-brand-dark transition">無料相談</a>
+    </nav>
+
+    <!-- モバイルメニューボタン -->
+    <button id="menu-btn" aria-label="メニューを開く" aria-expanded="false" class="md:hidden p-2">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+    </button>
+  </div>
+
+  <!-- モバイルメニュー -->
+  <div id="mobile-menu" class="hidden md:hidden border-t bg-white px-4 py-4 space-y-3 text-sm font-medium">
+    <a href="#features" class="block">特徴</a>
+    <a href="#pricing" class="block">料金</a>
+    <a href="#faq" class="block">よくある質問</a>
+    <a href="contact.html" class="block">お問い合わせ</a>
+    <a href="#cta" class="block text-brand font-bold">無料相談</a>
+  </div>
+</header>
+
+<main class="pt-16">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="bg-gradient-to-b from-brand-light to-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-brand font-bold mb-3">【編集】サブキャッチ</p>
+        <h1 class="text-3xl md:text-5xl font-black leading-tight mb-6">
+          【編集】メインキャッチコピー<br class="hidden md:block" />を2行程度で
+        </h1>
+        <p class="text-gray-600 mb-8 leading-relaxed">
+          【編集】誰向けのサービスで、どんな課題をどう解決するかを2〜3文で説明する。
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#cta" class="bg-brand text-white px-8 py-4 rounded-full font-bold hover:bg-brand-dark transition">無料相談を申し込む</a>
+          <a href="#features" class="border border-gray-300 px-8 py-4 rounded-full font-bold hover:bg-gray-50 transition">詳しく見る</a>
+        </div>
+      </div>
+      <div class="aspect-[4/3] rounded-2xl img-placeholder"></div>
+      <!-- 【編集】↑ img-placeholder を <img src="..." class="rounded-2xl object-cover w-full h-full"> に差し替え -->
+    </div>
+  </section>
+
+  <!-- ============================== FEATURES ============================== -->
+  <section id="features" class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+    <div class="text-center mb-14">
+      <p class="text-brand font-bold mb-2">FEATURES</p>
+      <h2 class="text-2xl md:text-3xl font-black">【編集】選ばれる3つの理由</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- カード×3。増減はこのブロックごとコピー/削除 -->
+      <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center mb-5 text-brand font-black">01</div>
+        <h3 class="font-bold text-lg mb-3">【編集】特徴タイトル</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">【編集】特徴の説明文をここに。2〜3行程度が読みやすい。</p>
+      </div>
+      <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center mb-5 text-brand font-black">02</div>
+        <h3 class="font-bold text-lg mb-3">【編集】特徴タイトル</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">【編集】特徴の説明文をここに。2〜3行程度が読みやすい。</p>
+      </div>
+      <div class="p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 rounded-xl bg-brand-light flex items-center justify-center mb-5 text-brand font-black">03</div>
+        <h3 class="font-bold text-lg mb-3">【編集】特徴タイトル</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">【編集】特徴の説明文をここに。2〜3行程度が読みやすい。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== TESTIMONIALS ============================== -->
+  <section class="bg-gray-50 py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <p class="text-brand font-bold mb-2">VOICE</p>
+        <h2 class="text-2xl md:text-3xl font-black">【編集】お客様の声</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-sm">
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">「【編集】導入前の課題と導入後の変化を、お客様の言葉で。」</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full img-placeholder"></div>
+            <p class="text-sm font-bold">【編集】お名前・会社名</p>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm">
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">「【編集】導入前の課題と導入後の変化を、お客様の言葉で。」</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full img-placeholder"></div>
+            <p class="text-sm font-bold">【編集】お名前・会社名</p>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm">
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">「【編集】導入前の課題と導入後の変化を、お客様の言葉で。」</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full img-placeholder"></div>
+            <p class="text-sm font-bold">【編集】お名前・会社名</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== PRICING ============================== -->
+  <section id="pricing" class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+    <div class="text-center mb-14">
+      <p class="text-brand font-bold mb-2">PRICING</p>
+      <h2 class="text-2xl md:text-3xl font-black">【編集】料金プラン</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-8 rounded-2xl border border-gray-200">
+        <h3 class="font-bold text-lg mb-2">ライト</h3>
+        <p class="text-3xl font-black mb-6">¥0<span class="text-sm font-normal text-gray-500">/月</span></p>
+        <ul class="text-sm text-gray-600 space-y-2 mb-8">
+          <li>【編集】機能A</li>
+          <li>【編集】機能B</li>
+        </ul>
+        <a href="#cta" class="block text-center border border-gray-300 rounded-full py-3 font-bold hover:bg-gray-50">選択する</a>
+      </div>
+      <div class="p-8 rounded-2xl border-2 border-brand relative">
+        <p class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand text-white text-xs font-bold px-4 py-1 rounded-full">人気No.1</p>
+        <h3 class="font-bold text-lg mb-2">スタンダード</h3>
+        <p class="text-3xl font-black mb-6">¥【編集】<span class="text-sm font-normal text-gray-500">/月</span></p>
+        <ul class="text-sm text-gray-600 space-y-2 mb-8">
+          <li>【編集】機能A・B</li>
+          <li>【編集】機能C</li>
+        </ul>
+        <a href="#cta" class="block text-center bg-brand text-white rounded-full py-3 font-bold hover:bg-brand-dark">選択する</a>
+      </div>
+      <div class="p-8 rounded-2xl border border-gray-200">
+        <h3 class="font-bold text-lg mb-2">プレミアム</h3>
+        <p class="text-3xl font-black mb-6">¥【編集】<span class="text-sm font-normal text-gray-500">/月</span></p>
+        <ul class="text-sm text-gray-600 space-y-2 mb-8">
+          <li>【編集】全機能</li>
+          <li>【編集】専任サポート</li>
+        </ul>
+        <a href="#cta" class="block text-center border border-gray-300 rounded-full py-3 font-bold hover:bg-gray-50">選択する</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FAQ（JS不要、details/summaryのみ） ============================== -->
+  <section id="faq" class="bg-gray-50 py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <p class="text-brand font-bold mb-2">FAQ</p>
+        <h2 class="text-2xl md:text-3xl font-black">よくある質問</h2>
+      </div>
+      <div class="space-y-4">
+        <details class="bg-white rounded-xl p-5 group">
+          <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
+            【編集】質問1
+            <svg class="faq-icon w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </summary>
+          <p class="text-sm text-gray-600 mt-3 leading-relaxed">【編集】回答をここに。</p>
+        </details>
+        <details class="bg-white rounded-xl p-5 group">
+          <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
+            【編集】質問2
+            <svg class="faq-icon w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </summary>
+          <p class="text-sm text-gray-600 mt-3 leading-relaxed">【編集】回答をここに。</p>
+        </details>
+        <details class="bg-white rounded-xl p-5 group">
+          <summary class="flex justify-between items-center cursor-pointer font-bold list-none">
+            【編集】質問3
+            <svg class="faq-icon w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </summary>
+          <p class="text-sm text-gray-600 mt-3 leading-relaxed">【編集】回答をここに。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CTA ============================== -->
+  <section id="cta" class="bg-brand">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-20 text-center text-white">
+      <h2 class="text-2xl md:text-3xl font-black mb-4">【編集】今すぐ無料相談を申し込む</h2>
+      <p class="mb-8 text-brand-light">【編集】背中を押す一言（初回無料・即日対応可、など）</p>
+      <a href="contact.html" class="inline-block bg-white text-brand px-10 py-4 rounded-full font-bold hover:bg-gray-100 transition">お問い合わせフォームへ</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="bg-gray-900 text-gray-400 py-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+    <p class="font-bold text-white">【編集】サービス名</p>
+    <nav class="flex gap-6 text-sm">
+      <a href="index.html" class="hover:text-white">ホーム</a>
+      <a href="about.html" class="hover:text-white">会社概要</a>
+      <a href="contact.html" class="hover:text-white">お問い合わせ</a>
+    </nav>
+    <p class="text-xs">&copy; <span id="year"></span> 【編集】会社名 All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

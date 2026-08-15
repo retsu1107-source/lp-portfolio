@@ -1,0 +1,33 @@
+<!--
+  contact-form.html
+  送信先は必ず案件ごとに action を書き換える（Formspree / Googleフォーム / 独自API）。
+  main.js が #contact-form のバリデーションとハニーポット判定を行う。
+-->
+<form id="contact-form" action="https://formspree.io/f/【編集】xxxxxxx" method="POST" class="space-y-6" novalidate>
+  <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+
+  <div>
+    <label for="name" class="block text-sm font-bold mb-2">お名前 <span class="text-red-500">*</span></label>
+    <input type="text" id="name" name="name" required
+      class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand" />
+    <p id="name-error" class="hidden text-xs text-red-500 mt-1"></p>
+  </div>
+
+  <div>
+    <label for="email" class="block text-sm font-bold mb-2">メールアドレス <span class="text-red-500">*</span></label>
+    <input type="email" id="email" name="email" required
+      class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand" />
+    <p id="email-error" class="hidden text-xs text-red-500 mt-1"></p>
+  </div>
+
+  <div>
+    <label for="message" class="block text-sm font-bold mb-2">お問い合わせ内容 <span class="text-red-500">*</span></label>
+    <textarea id="message" name="message" rows="5" required
+      class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand"></textarea>
+    <p id="message-error" class="hidden text-xs text-red-500 mt-1"></p>
+  </div>
+
+  <button type="submit" class="w-full bg-brand text-white rounded-full py-4 font-bold hover:bg-brand-dark transition">
+    送信する
+  </button>
+</form>

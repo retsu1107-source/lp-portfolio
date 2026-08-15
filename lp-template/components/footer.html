@@ -1,0 +1,13 @@
+<!-- footer.html：</main>の後に貼り付ける -->
+<footer class="bg-gray-900 text-gray-400 py-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+    <p class="font-bold text-white">【編集】サービス名</p>
+    <nav class="flex gap-6 text-sm">
+      <a href="index.html" class="hover:text-white">ホーム</a>
+      <a href="about.html" class="hover:text-white">会社概要</a>
+      <a href="contact.html" class="hover:text-white">お問い合わせ</a>
+    </nav>
+    <p class="text-xs">&copy; <span id="year"></span> 【編集】会社名 All Rights Reserved.</p>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>

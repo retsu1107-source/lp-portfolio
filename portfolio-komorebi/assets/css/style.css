@@ -1,0 +1,67 @@
+/* =========================================================
+   喫茶 木もれ日 - カスタムCSS
+   あたたかみ・親しみやすさを軸にしたトーン。
+   Tailwindユーティリティだけでは表現しづらい部分をここで補う。
+   ========================================================= */
+
+:root {
+  --brand-primary: #8a5a3b;   /* コーヒーブラウン */
+  --brand-primary-dark: #6e4630;
+  --brand-cream: #fdf7f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: var(--brand-cream);
+}
+
+.font-serif-jp {
+  font-family: "Shippori Mincho", serif;
+}
+
+/* FAQの開閉アイコン回転 */
+details[open] .faq-icon {
+  transform: rotate(180deg);
+}
+.faq-icon {
+  transition: transform 0.2s ease;
+}
+
+/* ヘッダーのスクロール時の影 */
+header.is-scrolled {
+  box-shadow: 0 2px 12px rgba(90, 62, 40, 0.08);
+}
+
+.is-submitting {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* 湯気アニメーション（ヒーローのコーヒーカップイラスト用） */
+@keyframes steam {
+  0%   { transform: translateY(0) scaleX(1); opacity: 0.55; }
+  50%  { transform: translateY(-10px) scaleX(1.4); opacity: 0.9; }
+  100% { transform: translateY(-22px) scaleX(0.8); opacity: 0; }
+}
+.steam {
+  animation: steam 2.6s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+.steam.delay-1 { animation-delay: 0.6s; }
+.steam.delay-2 { animation-delay: 1.2s; }
+
+/* メニュー表のドットリーダー（価格を右端にそろえる古典的な体裁） */
+.menu-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.menu-row .leader {
+  flex: 1;
+  border-bottom: 1px dotted #c9b8a8;
+  margin-bottom: 4px;
+}

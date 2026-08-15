@@ -1,0 +1,31 @@
+<!--
+  header.html
+  新しい案件のプロジェクトにコピペして使うヘッダー部品。
+  <body>直後、ページ上部に貼り付ける。
+  main.js の #menu-btn / #mobile-menu / #site-header の紐付けが必要（assets/js/main.js を読み込むこと）。
+-->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur transition-shadow">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="text-lg font-bold text-brand">【編集】サービス名</a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="index.html#features" class="hover:text-brand">特徴</a>
+      <a href="index.html#pricing" class="hover:text-brand">料金</a>
+      <a href="index.html#faq" class="hover:text-brand">よくある質問</a>
+      <a href="contact.html" class="hover:text-brand">お問い合わせ</a>
+      <a href="index.html#cta" class="bg-brand text-white px-5 py-2 rounded-full hover:bg-brand-dark transition">無料相談</a>
+    </nav>
+
+    <button id="menu-btn" aria-label="メニューを開く" aria-expanded="false" class="md:hidden p-2">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden border-t bg-white px-4 py-4 space-y-3 text-sm font-medium">
+    <a href="index.html#features" class="block">特徴</a>
+    <a href="index.html#pricing" class="block">料金</a>
+    <a href="index.html#faq" class="block">よくある質問</a>
+    <a href="contact.html" class="block">お問い合わせ</a>
+    <a href="index.html#cta" class="block text-brand font-bold">無料相談</a>
+  </div>
+</header>

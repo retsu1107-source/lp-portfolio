@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>ご予約・お問い合わせ｜喫茶 木もれ日</title>
+<meta name="description" content="喫茶 木もれ日への貸切・団体利用のご相談やお問い合わせはこちらから。" />
+<link rel="canonical" href="https://example.com/contact.html" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: { brand: { DEFAULT: "#8a5a3b", dark: "#6e4630", light: "#f3e6d8" } },
+        fontFamily: { sans: ['"Noto Sans JP"', "sans-serif"], serifjp: ['"Shippori Mincho"', "serif"] },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="text-stone-800 antialiased">
+
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-[#fdf7f0]/90 backdrop-blur transition-shadow">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="font-serifjp text-lg font-bold text-brand-dark">喫茶 木もれ日</a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="index.html#features" class="hover:text-brand">こだわり</a>
+      <a href="index.html#menu" class="hover:text-brand">メニュー</a>
+      <a href="index.html#access" class="hover:text-brand">アクセス</a>
+      <a href="index.html#faq" class="hover:text-brand">よくある質問</a>
+    </nav>
+    <button id="menu-btn" aria-label="メニューを開く" aria-expanded="false" class="md:hidden p-2">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-brand-light bg-[#fdf7f0] px-4 py-4 space-y-3 text-sm font-medium">
+    <a href="index.html#features" class="block">こだわり</a>
+    <a href="index.html#menu" class="block">メニュー</a>
+    <a href="index.html#access" class="block">アクセス</a>
+    <a href="index.html#faq" class="block">よくある質問</a>
+  </div>
+</header>
+
+<main class="pt-16">
+  <section class="max-w-xl mx-auto px-4 sm:px-6 py-20">
+    <p class="text-brand font-bold mb-2 text-center tracking-wide">CONTACT</p>
+    <h1 class="font-serifjp text-2xl md:text-4xl font-bold mb-4 text-center text-brand-dark">ご予約・お問い合わせ</h1>
+    <p class="text-sm text-stone-500 text-center mb-12">5名以上でのご利用・貸切のご相談は、こちらのフォームからお願いいたします。<br />通常1〜2営業日以内にご返信します。</p>
+
+    <!--
+      送信先について：
+      1. Formspree（https://formspree.io）: action を https://formspree.io/f/xxxxxxx に変更するだけでOK。無料枠あり。
+      2. Googleフォームへのリンクに差し替えてもよい。
+      現状は仮のactionなので、実案件では必ず差し替えること。
+    -->
+    <form id="contact-form" action="https://formspree.io/f/【編集】xxxxxxx" method="POST" class="space-y-6" novalidate>
+      <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+
+      <div>
+        <label for="name" class="block text-sm font-bold mb-2">お名前 <span class="text-red-500">*</span></label>
+        <input type="text" id="name" name="name" required
+          class="w-full border border-stone-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand" />
+        <p id="name-error" class="hidden text-xs text-red-500 mt-1"></p>
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-bold mb-2">メールアドレス <span class="text-red-500">*</span></label>
+        <input type="email" id="email" name="email" required
+          class="w-full border border-stone-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand" />
+        <p id="email-error" class="hidden text-xs text-red-500 mt-1"></p>
+      </div>
+
+      <div>
+        <label for="people" class="block text-sm font-bold mb-2">ご利用人数</label>
+        <input type="text" id="people" name="people" placeholder="例）6名"
+          class="w-full border border-stone-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand" />
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-bold mb-2">お問い合わせ内容 <span class="text-red-500">*</span></label>
+        <textarea id="message" name="message" rows="5" required
+          class="w-full border border-stone-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand"></textarea>
+        <p id="message-error" class="hidden text-xs text-red-500 mt-1"></p>
+      </div>
+
+      <button type="submit" class="w-full bg-brand text-white rounded-full py-4 font-bold hover:bg-brand-dark transition">
+        送信する
+      </button>
+    </form>
+  </section>
+</main>
+
+<footer class="bg-brand-dark text-white/70 py-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+    <p class="font-serifjp font-bold text-white">喫茶 木もれ日</p>
+    <nav class="flex gap-6 text-sm">
+      <a href="index.html" class="hover:text-white">ホーム</a>
+      <a href="about.html" class="hover:text-white">お店のこと</a>
+      <a href="contact.html" class="hover:text-white">お問い合わせ</a>
+    </nav>
+    <p class="text-xs">&copy; <span id="year"></span> 喫茶 木もれ日</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

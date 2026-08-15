@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>お店のこと｜喫茶 木もれ日</title>
+<meta name="description" content="喫茶 木もれ日のコンセプトと、店主のコーヒーへのこだわりについて。" />
+<link rel="canonical" href="https://example.com/about.html" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: { brand: { DEFAULT: "#8a5a3b", dark: "#6e4630", light: "#f3e6d8" } },
+        fontFamily: { sans: ['"Noto Sans JP"', "sans-serif"], serifjp: ['"Shippori Mincho"', "serif"] },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="text-stone-800 antialiased">
+
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-[#fdf7f0]/90 backdrop-blur transition-shadow">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="font-serifjp text-lg font-bold text-brand-dark">喫茶 木もれ日</a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="index.html#features" class="hover:text-brand">こだわり</a>
+      <a href="index.html#menu" class="hover:text-brand">メニュー</a>
+      <a href="index.html#access" class="hover:text-brand">アクセス</a>
+      <a href="index.html#faq" class="hover:text-brand">よくある質問</a>
+      <a href="contact.html" class="bg-brand text-white px-5 py-2 rounded-full hover:bg-brand-dark transition">ご予約・お問い合わせ</a>
+    </nav>
+    <button id="menu-btn" aria-label="メニューを開く" aria-expanded="false" class="md:hidden p-2">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-brand-light bg-[#fdf7f0] px-4 py-4 space-y-3 text-sm font-medium">
+    <a href="index.html#features" class="block">こだわり</a>
+    <a href="index.html#menu" class="block">メニュー</a>
+    <a href="index.html#access" class="block">アクセス</a>
+    <a href="index.html#faq" class="block">よくある質問</a>
+    <a href="contact.html" class="block text-brand font-bold">ご予約・お問い合わせ</a>
+  </div>
+</header>
+
+<main class="pt-16">
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-20">
+    <p class="text-brand font-bold mb-2 tracking-wide text-center">ABOUT</p>
+    <h1 class="font-serifjp text-2xl md:text-4xl font-bold mb-12 text-center text-brand-dark">お店のこと</h1>
+
+    <div class="space-y-6 text-stone-600 leading-relaxed text-sm md:text-base mb-16">
+      <p>
+        「喫茶 木もれ日」は、世田谷区代田の住宅街の一角で、2020年に開いた小さなコーヒースタンドです。
+        名前の由来は、店内の大きな窓から差し込む木もれ日のような、ふとひと息つける時間を届けたいという思いから。
+      </p>
+      <p>
+        コーヒー豆は月替わりで産地を選び、店の奥にある小さな焙煎機で少量ずつ焙煎しています。
+        大きく作りすぎず、いつも焼きたてに近い状態でお客様にお出しすることを大切にしています。
+      </p>
+      <p>
+        焼き菓子も毎朝の仕込みから。甘すぎない味付けで、コーヒーの余韻を邪魔しないことを意識しています。
+      </p>
+    </div>
+
+    <div class="bg-white rounded-2xl border border-brand-light p-8 md:p-10">
+      <h2 class="font-serifjp text-lg font-bold text-brand-dark mb-6">店主より</h2>
+      <p class="text-sm text-stone-600 leading-relaxed mb-6">
+        【編集】前職の話や、コーヒーを仕事にしようと思ったきっかけなど、店主のプロフィールや思いをここに書く。
+        人柄が伝わるエピソードが1つあると、お客様との距離がぐっと近くなります。
+      </p>
+      <p class="text-sm font-bold text-brand-dark">店主 【編集】氏名</p>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-brand-dark text-white/70 py-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+    <p class="font-serifjp font-bold text-white">喫茶 木もれ日</p>
+    <nav class="flex gap-6 text-sm">
+      <a href="index.html" class="hover:text-white">ホーム</a>
+      <a href="about.html" class="hover:text-white">お店のこと</a>
+      <a href="contact.html" class="hover:text-white">お問い合わせ</a>
+    </nav>
+    <p class="text-xs">&copy; <span id="year"></span> 喫茶 木もれ日</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
