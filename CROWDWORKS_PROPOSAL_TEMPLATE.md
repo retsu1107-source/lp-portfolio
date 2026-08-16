@@ -18,9 +18,9 @@
 [案件の業種]の場合、[具体的に触れる要素。例：メニュー訴求／予約導線／ギャラリー訴求 など]を重視した構成をご提案できます。
 
 制作実績（架空店舗のサンプルですが、デザインの方向性の参考にしていただけます）
-・喫茶 木もれ日（カフェ）：[ポートフォリオURL]/portfolio-komorebi/
-・Nail Salon Rosette（ネイルサロン）：[ポートフォリオURL]/portfolio-nail-rosette/
-・ポートフォリオ全体：[ポートフォリオURL]
+・喫茶 木もれ日（カフェ）：https://retsu1107-source.github.io/lp-portfolio/portfolio-komorebi/
+・Nail Salon Rosette（ネイルサロン）：https://retsu1107-source.github.io/lp-portfolio/portfolio-nail-rosette/
+・ポートフォリオ全体：https://retsu1107-source.github.io/lp-portfolio/
 
 ## 進め方・お見積もり
 - ヒアリング → デザイン・構成のご提案 → コーディング → 確認・調整 → 納品、という流れで進めます。
@@ -39,7 +39,7 @@
 ```
 はじめまして。個人店・小規模店舗様向けのLP制作を専門にしている[名前/屋号]です。
 業種ごとに配色・構成を作り分け、テンプレ感の出ないデザインを得意としています。
-制作サンプル：[ポートフォリオURL]（カフェ／ネイルサロンの2種を掲載）
+制作サンプル：https://retsu1107-source.github.io/lp-portfolio/（カフェ／ネイルサロンの2種を掲載）
 納期目安[◯週間]、[金額感]でご対応可能です。詳細お伺いできればと思います。よろしくお願いいたします。
 ```
 
